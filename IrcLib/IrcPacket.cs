@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace IrcLib
 {
-	public class IrcPacket2
+	public class IrcPacket
 	{
 		public string Prefix;
 		public string Command;
 		public List<string> Arguments = new List<string>();
-		public IrcPacket2 ()
+		public IrcPacket ()
 		{
 		}
 

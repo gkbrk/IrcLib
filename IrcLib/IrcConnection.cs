@@ -46,7 +46,7 @@ namespace IrcLib
 				OnSocketLineReceive (this, new OnSocketLineReceiveArgs (line));
 			}
 
-			IrcPacket2 packet = new IrcPacket2 ();
+			IrcPacket packet = new IrcPacket ();
 			packet.Parse (line);
 
 			if (OnIrcPacketReceived != null) {
