@@ -34,7 +34,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IrcConnection.cs" />
-    <Compile Include="IrcPacket.cs" />
     <Compile Include="OnConnectArgs.cs" />
     <Compile Include="OnIrcPacketReceivedArgs.cs" />
     <Compile Include="OnPrivMsgArgs.cs" />
