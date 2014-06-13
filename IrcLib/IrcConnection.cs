@@ -115,20 +115,20 @@ namespace IrcLib
 
 		public string getIdent (string nick)
 		{
-			string identname = null;
+			string identname = "notIdented";
+			bool whoisDone = false;
 			EventHandler<OnIrcPacketReceivedArgs> handler = null;
 			handler = delegate(object sender, OnIrcPacketReceivedArgs e) {
 				if (e.Packet.Command == "330" && e.Packet.Arguments[1] == nick) {
 					identname = e.Packet.Arguments[2];
-					OnIrcPacketReceived -= handler;
 				} else if (e.Packet.Command == "318" && e.Packet.Arguments[1] == nick) {
-					identname = "notIdented";
 					OnIrcPacketReceived -= handler;
+					whoisDone = true;
 				}
 			};
 			OnIrcPacketReceived += handler;
 			SendLine (String.Format ("WHOIS {0}", nick));
-			while (string.IsNullOrEmpty(identname)) {
+			while (!whoisDone) {
 				RunOnce ();
 			}
 			return identname;
