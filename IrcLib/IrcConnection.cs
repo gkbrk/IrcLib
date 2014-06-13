@@ -133,6 +133,28 @@ namespace IrcLib
 			}
 			return identname;
 		}
+
+		public long getPing()
+		{
+			long ping = -1;
+			EventHandler<OnIrcPacketReceivedArgs> handler = null;
+			long currentMillis = -1;
+			handler = delegate(object sender, OnIrcPacketReceivedArgs e) {
+				if(e.Packet.Command == "PONG" && e.Packet.Arguments[1] == "irclibping")
+				{
+					ping = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond - currentMillis;
+					OnIrcPacketReceived -= handler;
+				}
+			};
+			SendLine("PING :irclibping");
+			currentMillis = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
+			OnIrcPacketReceived += handler;
+			while(ping == -1)
+			{
+				RunOnce();
+			}
+			return ping;
+		}
 	}
 }
 
