@@ -41,6 +41,10 @@
     <Compile Include="OnSocketLineReceiveArgs.cs" />
     <Compile Include="SimpleSocket.cs" />
     <Compile Include="IrcPacket.cs" />
+    <Compile Include="Examples\ParrotBot.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Examples\" />
+  </ItemGroup>
 </Project>

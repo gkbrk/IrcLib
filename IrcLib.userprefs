@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="IrcLib/IrcConnection.cs">
     <Files>
-      <File FileName="IrcLib/IrcConnection.cs" Line="118" Column="34" />
+      <File FileName="IrcLib/IrcConnection.cs" Line="131" Column="22" />
       <File FileName="IrcLib/SimpleSocket.cs" Line="1" Column="1" />
       <File FileName="IrcLib/IrcPacket.cs" Line="1" Column="1" />
       <File FileName="IrcLib/OnIrcPacketReceivedArgs.cs" Line="1" Column="1" />
