@@ -1,11 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="IrcLib/IrcConnection.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IrcLib/Examples/ParrotBot.cs">
     <Files>
       <File FileName="IrcLib/IrcConnection.cs" Line="131" Column="22" />
       <File FileName="IrcLib/SimpleSocket.cs" Line="1" Column="1" />
       <File FileName="IrcLib/IrcPacket.cs" Line="1" Column="1" />
       <File FileName="IrcLib/OnIrcPacketReceivedArgs.cs" Line="1" Column="1" />
+      <File FileName="IrcLib/Examples/ParrotBot.cs" Line="6" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
