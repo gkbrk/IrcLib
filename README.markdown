@@ -6,6 +6,7 @@ IrcLib is currently lacking in documentation. This is planned to be fixed soon. 
 
 #Examples#
 * [ParrotBot](IrcLib/Examples/ParrotBot.cs) - A bot which replies to the channel with the same messages.
+* [HelloBot](IrcLib/Examples/HelloBot.cs) - A bot which responds to the messages containing "hello".
 
 #Features#
 * Event-driven

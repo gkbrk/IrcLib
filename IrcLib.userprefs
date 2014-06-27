@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="IrcLib/IrcConnection.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IrcLib/Examples/HelloBot.cs">
     <Files>
-      <File FileName="IrcLib/IrcConnection.cs" Line="51" Column="4" />
+      <File FileName="IrcLib/Examples/HelloBot.cs" Line="25" Column="70" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
