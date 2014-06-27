@@ -6,3 +6,9 @@ IrcLib is currently lacking in documentation. This is planned to be fixed soon. 
 
 #Examples#
 * [ParrotBot](IrcLib/Examples/ParrotBot.cs) - A bot which replies to the channel with the same messages.
+
+#Features#
+* Event-driven
+* Handles pings automatically
+* Written in pure-C# with sockets
+* Very easy to use. Check out the ParrotBot example to see the amount of code needed to have a working bot.
